@@ -20,6 +20,7 @@ class SecondScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(20.0),
                   child: Center(
                       child: Container(
+                        width: double.infinity,
                         child: const Text(
                           "Wir benötigen ihre Zustimmung",
                           style: TextStyle(

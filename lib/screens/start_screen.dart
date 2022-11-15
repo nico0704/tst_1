@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tst_1/screens/second_screen.dart';
 import 'package:tst_1/screens/third_screen.dart';
+import 'package:tst_1/screens/urlaub_screen.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({Key? key}) : super(key: key);
@@ -40,6 +41,13 @@ class StartScreen extends StatelessWidget {
                         );
                       },
                       child: Text("Stack bsp")),
+                  ElevatedButton(
+                      onPressed: () async {
+                        print("Urlaubsseite");
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => UrlaubScreen()),
+                        );
+                      },
+                      child: Text("Urlaubsseite")),
                   machZeile("24"),
                   machZeile("Augenfarbe: gruen"),
                   machZeile("HELLO WORLD"),
